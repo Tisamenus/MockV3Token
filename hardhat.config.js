@@ -1,4 +1,5 @@
 require('dotenv').config();
+require("@nomiclabs/hardhat-waffle");
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
@@ -30,5 +31,6 @@ module.exports = {
    //    settings: {}
    //  }
    //}
-  }
+  },
+  mocha: { timeout: 999999 }
 };

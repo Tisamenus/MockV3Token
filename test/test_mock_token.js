@@ -5,27 +5,32 @@ const chalk = require("chalk");
 
 describe("Test Mock V3 Token", function () {
 
+    //factory
+    let mockTokenFactory;
+
     //contract
     let mockTokenContract;
 
     // wallet
     let deployingWallet;
-    const deploy = async (name, ...args) => (await ethers.getContractFactory(name)).deploy(...args);
 
     let extraGasInfo;
 
     before(async function () {
+
         [deployingWallet] = await ethers.getSigners();
 
-        it("should deploy contract successfully", async function () {
-            mockTokenContract = await deploy('MockTocken');
+        mockTokenFactory = await ethers.getContractFactory('MockV3Token');
 
-            const gasUsed = mockTokenContract.deployTransaction.gasLimit.mul(deployed.deployTransaction.gasPrice)
-            extraGasInfo = `${utils.formatEther(gasUsed)} ETH, tx hash ${deployed.deployTransaction.hash}, \n`
+        mockTokenContract = await mockTokenFactory.deploy();
 
-            expect(mockTokenContract.address).to.exist();
 
-        });
+
+
+        const gasUsed = mockTokenContract.deployTransaction.gasLimit.mul(mockTokenContract.deployTransaction.gasPrice)
+        extraGasInfo = `${ethers.utils.formatEther(gasUsed)} ETH, tx hash ${mockTokenContract.deployTransaction.hash}, \n`
+
+
 
         console.log(
             chalk.cyan("MockToken"),
@@ -35,22 +40,26 @@ describe("Test Mock V3 Token", function () {
         console.log(
             chalk.grey(extraGasInfo)
         );
+
+
     });
 
     describe("SelfDeployPool()", () => {
 
+        let deploTX;
+        let deploReceipt;
+
         it("Should deploy the pool", async () => {
 
-        const deploTX = await mockTokenContract.selfDeployPool();
+            await expect (deploTX = await mockTokenContract.selfDeployPool()).to.emit(mockTokenContract, 'PoolInitialized');
+            deploReceipt = await deploTX.wait();
 
-        const deploReceipt = await deploTX.wait();
-        expect('selfDeployPool').to.be.calledOnContract(mockTokenContract);
+
+            console.log(deploReceipt.logs);
+
 
         });
 
-
-
-        console.log(receipt.events[0].decode, '\n', receipt.events[1].decode);
 
 
     });

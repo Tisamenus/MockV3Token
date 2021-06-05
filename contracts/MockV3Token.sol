@@ -11,7 +11,7 @@ import { IWETH9 } from "./IWETH9.sol";
 // testnet ether weth9 0xc778417E063141139Fce010982780140Aa0cD5Ab
 
 
-contract MockToken is ERC20 {
+contract MockV3Token is ERC20 {
 
 
     address public poolAddress;
@@ -25,7 +25,7 @@ contract MockToken is ERC20 {
     event PoolInitialized(address PoolAddress, uint160 sqrtPriceX96);
 
 
-    constructor () ERC20("MockToken", "MOCK2536") {
+    constructor () ERC20("MockV3Token", "MOCK2536") {
         poolDeployed = false;
         v3Factory = IUniswapV3Factory(0x1F98431c8aD98523631AE4a59f267346ea31F984);
         v3NPM = INonfungiblePositionManager(0xC36442b4a4522E871399CD717aBDD847Ab11FE88);

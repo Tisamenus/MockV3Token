@@ -35,10 +35,10 @@
         "IWETH9"
       ]
     },
-    "/mnt/c/degenian/MockV3Token/contracts/MockToken.sol": {
-      "lastModificationDate": 1622922192083,
-      "contentHash": "47a5f09936fd0eeb5894821f114d72d9",
-      "sourceName": "contracts/MockToken.sol",
+    "/mnt/c/degenian/MockV3Token/contracts/MockV3Token.sol": {
+      "lastModificationDate": 1622924821205,
+      "contentHash": "a8fa2fc7d8127598d3b353e4bd236b76",
+      "sourceName": "contracts/MockV3Token.sol",
       "solcConfig": {
         "version": "0.7.6",
         "settings": {
@@ -72,7 +72,7 @@
         "^0.7.6"
       ],
       "artifacts": [
-        "MockToken"
+        "MockV3Token"
       ]
     },
     "/mnt/c/degenian/MockV3Token/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
