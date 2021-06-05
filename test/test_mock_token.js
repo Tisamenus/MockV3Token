@@ -42,11 +42,13 @@ describe("Test Mock V3 Token", function () {
         it("Should deploy the pool", async () => {
 
         const deploTX = await mockTokenContract.selfDeployPool();
+
+        const deploReceipt = await deploTX.wait();
         expect('selfDeployPool').to.be.calledOnContract(mockTokenContract);
 
         });
 
-        const deploReceipt = await deploTX.wait();
+
 
         console.log(receipt.events[0].decode, '\n', receipt.events[1].decode);
 

@@ -1,4 +1,4 @@
-pragma solidity ^0.8.0;
+pragma solidity ^0.7.6;
 
 import {ERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import {IUniswapV3Factory } from "@uniswap/v3-core/contracts/interfaces/IUniswapV3Factory.sol";
@@ -53,7 +53,7 @@ contract MockToken is ERC20 {
     }
 
     function addWETH() external payable {
-        address payable weth9cAddress = payable(weth9c);
+        address payable weth9cAddress = payable(address(weth9c));
         // has fallback function
         weth9cAddress.send(msg.value);
     }

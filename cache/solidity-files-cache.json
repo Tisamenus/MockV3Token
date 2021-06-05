@@ -1,0 +1,643 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/mnt/c/degenian/MockV3Token/contracts/IWETH9.sol": {
+      "lastModificationDate": 1622922184069,
+      "contentHash": "e29111f92c6cf66fb4daedfc3c79031a",
+      "sourceName": "contracts/IWETH9.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.7.6"
+      ],
+      "artifacts": [
+        "IWETH9"
+      ]
+    },
+    "/mnt/c/degenian/MockV3Token/contracts/MockToken.sol": {
+      "lastModificationDate": 1622922192083,
+      "contentHash": "47a5f09936fd0eeb5894821f114d72d9",
+      "sourceName": "contracts/MockToken.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@uniswap/v3-core/contracts/interfaces/IUniswapV3Factory.sol",
+        "@uniswap/v3-periphery/contracts/interfaces/INonfungiblePositionManager.sol",
+        "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolActions.sol",
+        "./IWETH9.sol"
+      ],
+      "versionPragmas": [
+        "^0.7.6"
+      ],
+      "artifacts": [
+        "MockToken"
+      ]
+    },
+    "/mnt/c/degenian/MockV3Token/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1622922967223,
+      "contentHash": "8065b340476f61365c076897199425f1",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/Context.sol",
+        "./IERC20.sol",
+        "../../math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/mnt/c/degenian/MockV3Token/node_modules/@uniswap/v3-core/contracts/interfaces/IUniswapV3Factory.sol": {
+      "lastModificationDate": 1622922697512,
+      "contentHash": "f0eeb76e5ae42bcbacc8efc10e091716",
+      "sourceName": "@uniswap/v3-core/contracts/interfaces/IUniswapV3Factory.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV3Factory"
+      ]
+    },
+    "/mnt/c/degenian/MockV3Token/node_modules/@uniswap/v3-periphery/contracts/interfaces/INonfungiblePositionManager.sol": {
+      "lastModificationDate": 1622922967222,
+      "contentHash": "2153274e36e94cc4e2c987f098cf5420",
+      "sourceName": "@uniswap/v3-periphery/contracts/interfaces/INonfungiblePositionManager.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC721/IERC721Metadata.sol",
+        "@openzeppelin/contracts/token/ERC721/IERC721Enumerable.sol",
+        "./IPoolInitializer.sol",
+        "./IERC721Permit.sol",
+        "./IPeripheryPayments.sol",
+        "./IPeripheryImmutableState.sol",
+        "../libraries/PoolAddress.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "INonfungiblePositionManager"
+      ]
+    },
+    "/mnt/c/degenian/MockV3Token/node_modules/@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolActions.sol": {
+      "lastModificationDate": 1622922697680,
+      "contentHash": "83d338eb1394008c808a20ac7c5bab0c",
+      "sourceName": "@uniswap/v3-core/contracts/interfaces/pool/IUniswapV3PoolActions.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IUniswapV3PoolActions"
+      ]
+    },
+    "/mnt/c/degenian/MockV3Token/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1622922967221,
+      "contentHash": "2adbd82f6d055a4751566d4671512b03",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/mnt/c/degenian/MockV3Token/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1622922967223,
+      "contentHash": "e0a41531d159d3a32f84b7a3ecf9fabb",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/mnt/c/degenian/MockV3Token/node_modules/@openzeppelin/contracts/math/SafeMath.sol": {
+      "lastModificationDate": 1622922967220,
+      "contentHash": "e03e12206057e809eb76c5f681170c32",
+      "sourceName": "@openzeppelin/contracts/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/mnt/c/degenian/MockV3Token/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Metadata.sol": {
+      "lastModificationDate": 1622922967223,
+      "contentHash": "370e7a48f316401b5063bcb604843e1b",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Metadata.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Metadata"
+      ]
+    },
+    "/mnt/c/degenian/MockV3Token/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Enumerable.sol": {
+      "lastModificationDate": 1622922967223,
+      "contentHash": "eaebc3874248c26f6ea0b13b9a140a94",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Enumerable"
+      ]
+    },
+    "/mnt/c/degenian/MockV3Token/node_modules/@uniswap/v3-periphery/contracts/interfaces/IPoolInitializer.sol": {
+      "lastModificationDate": 1622922967222,
+      "contentHash": "11600b3ed90d17aa07e53a77430a6d6c",
+      "sourceName": "@uniswap/v3-periphery/contracts/interfaces/IPoolInitializer.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "IPoolInitializer"
+      ]
+    },
+    "/mnt/c/degenian/MockV3Token/node_modules/@uniswap/v3-periphery/contracts/interfaces/IERC721Permit.sol": {
+      "lastModificationDate": 1622922967222,
+      "contentHash": "9073d26f60e6253b2dfbc103c78cf70d",
+      "sourceName": "@uniswap/v3-periphery/contracts/interfaces/IERC721Permit.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC721/IERC721.sol"
+      ],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "IERC721Permit"
+      ]
+    },
+    "/mnt/c/degenian/MockV3Token/node_modules/@uniswap/v3-periphery/contracts/interfaces/IPeripheryPayments.sol": {
+      "lastModificationDate": 1622922967222,
+      "contentHash": "8aa07bcaad7779d2bae8089adef235bf",
+      "sourceName": "@uniswap/v3-periphery/contracts/interfaces/IPeripheryPayments.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.5"
+      ],
+      "artifacts": [
+        "IPeripheryPayments"
+      ]
+    },
+    "/mnt/c/degenian/MockV3Token/node_modules/@uniswap/v3-periphery/contracts/interfaces/IPeripheryImmutableState.sol": {
+      "lastModificationDate": 1622922967222,
+      "contentHash": "e68917661480772223d87a606afb29cd",
+      "sourceName": "@uniswap/v3-periphery/contracts/interfaces/IPeripheryImmutableState.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IPeripheryImmutableState"
+      ]
+    },
+    "/mnt/c/degenian/MockV3Token/node_modules/@uniswap/v3-periphery/contracts/libraries/PoolAddress.sol": {
+      "lastModificationDate": 1622922967222,
+      "contentHash": "6cec4f6b237de21ad97bf32c19a2e0d8",
+      "sourceName": "@uniswap/v3-periphery/contracts/libraries/PoolAddress.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "PoolAddress"
+      ]
+    },
+    "/mnt/c/degenian/MockV3Token/node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol": {
+      "lastModificationDate": 1622922967223,
+      "contentHash": "e82621b83943f11c44988c60e83d6ebc",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC721"
+      ]
+    },
+    "/mnt/c/degenian/MockV3Token/node_modules/@openzeppelin/contracts/introspection/IERC165.sol": {
+      "lastModificationDate": 1622922967221,
+      "contentHash": "0d62a8380952235f135dae91590f90a3",
+      "sourceName": "@openzeppelin/contracts/introspection/IERC165.sol",
+      "solcConfig": {
+        "version": "0.7.6",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    }
+  }
+}
