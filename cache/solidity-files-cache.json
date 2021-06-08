@@ -600,8 +600,8 @@
       ]
     },
     "/mnt/c/degenian/MockV3Token/contracts/MockToken.sol": {
-      "lastModificationDate": 1623084778073,
-      "contentHash": "d6c0bdfcc20298f47846c580f718806c",
+      "lastModificationDate": 1623171606208,
+      "contentHash": "4a412522e2fafc65593ad592adf7d393",
       "sourceName": "contracts/MockToken.sol",
       "solcConfig": {
         "version": "0.7.6",
